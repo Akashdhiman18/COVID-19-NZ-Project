@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/admindashboard.png</file>
+        <file>image/adminlogin.png</file>
+        <file>image/arrow.png</file>
+        <file>image/arrowleft.png</file>
+        <file>image/crossicon.png</file>
+        <file>image/cspng.png</file>
+        <file>image/dashboard.png</file>
+        <file>image/file.png</file>
+        <file>image/home.png</file>
+        <file>image/list.png</file>
+        <file>image/logout.png</file>
+        <file>image/negative.png</file>
+        <file>image/nzcp.png</file>
+        <file>image/positive.png</file>
+        <file>image/report.png</file>
+        <file>image/signinimg.png</file>
+        <file>image/splashscreen.png</file>
+        <file>image/userlogin.png</file>
+        <file>image/welcomescreen.png</file>
+    </qresource>
+</RCC>
