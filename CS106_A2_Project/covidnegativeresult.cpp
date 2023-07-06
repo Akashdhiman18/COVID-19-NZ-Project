@@ -34,7 +34,7 @@ covidnegativeresult::covidnegativeresult(int userId,QWidget *parent) :
 
 
 QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
-database.setDatabaseName("D:/CS106_A2_Project/mycovidnz.sqlite");
+database.setDatabaseName("C:/CS106_A2_Project/mycovidnz.sqlite");
 
 if (!database.open())
 {

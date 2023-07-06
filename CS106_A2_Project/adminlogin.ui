@@ -92,7 +92,7 @@
     <pixmap>image/adminlogin.png</pixmap>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="adminloginbutton">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -215,7 +215,7 @@ color: rgb(255, 255, 255);</string>
   <zorder>lineEdit_userUsername</zorder>
   <zorder>label</zorder>
   <zorder>label_3</zorder>
-  <zorder>pushButton</zorder>
+  <zorder>adminloginbutton</zorder>
   <zorder>label_2</zorder>
   <zorder>lineEdit_userUsername_2</zorder>
   <zorder>backbutton_2</zorder>

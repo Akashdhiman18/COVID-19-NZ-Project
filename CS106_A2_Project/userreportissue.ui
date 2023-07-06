@@ -100,7 +100,7 @@
     <string>Enter Description </string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="reportissueSubmit">
    <property name="geometry">
     <rect>
      <x>20</x>

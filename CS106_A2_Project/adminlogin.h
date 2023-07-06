@@ -16,9 +16,10 @@ public:
     ~adminlogin();
 
 private slots:
-    void on_pushButton_clicked();
 
     void on_backbutton_2_clicked();
+
+    void on_adminloginbutton_clicked();
 
 private:
     Ui::adminlogin *ui;

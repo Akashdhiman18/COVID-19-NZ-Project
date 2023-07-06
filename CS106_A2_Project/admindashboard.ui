@@ -137,7 +137,7 @@ color: rgb(127, 126, 119);</string>
     <string>View user's information</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="logoutButton">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -250,7 +250,7 @@ color: rgb(127, 126, 119);</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="viewUserinformation">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -273,7 +273,7 @@ color: rgb(127, 126, 119);</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QPushButton" name="modifyUserinformation">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -296,7 +296,7 @@ color: rgb(127, 126, 119);</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_7">
+  <widget class="QPushButton" name="UploadCovidReport">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -498,13 +498,13 @@ Upload Certificate</string>
   <zorder>label_2</zorder>
   <zorder>label</zorder>
   <zorder>label_5</zorder>
-  <zorder>pushButton_2</zorder>
+  <zorder>logoutButton</zorder>
   <zorder>pushButton_3</zorder>
   <zorder>background_3</zorder>
   <zorder>background_5</zorder>
-  <zorder>pushButton_4</zorder>
-  <zorder>pushButton_5</zorder>
-  <zorder>pushButton_7</zorder>
+  <zorder>viewUserinformation</zorder>
+  <zorder>modifyUserinformation</zorder>
+  <zorder>UploadCovidReport</zorder>
   <zorder>label_6</zorder>
   <zorder>label_7</zorder>
   <zorder>label_12</zorder>

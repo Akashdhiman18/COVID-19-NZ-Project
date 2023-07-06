@@ -165,7 +165,7 @@
     <string>text</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="Downloadvaccinecertificate">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -277,7 +277,7 @@ color: rgb(255, 255, 255);</string>
   <zorder>label_6</zorder>
   <zorder>email</zorder>
   <zorder>time</zorder>
-  <zorder>pushButton</zorder>
+  <zorder>Downloadvaccinecertificate</zorder>
   <zorder>qrcode</zorder>
   <zorder>date_2</zorder>
   <zorder>backbutton</zorder>

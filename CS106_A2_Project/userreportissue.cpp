@@ -37,13 +37,13 @@ void userreportissue::logIssueReport(const QString& message)
     }
 }
 
-void userreportissue::on_pushButton_clicked()
+void userreportissue::on_reportissueSubmit_clicked()
 {
     QString issue = ui->lineEdit_userUsername->text();
 
 
     QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("D:/CS106_A2_Project/mycovidnz.sqlite");
+    database.setDatabaseName("C:/CS106_A2_Project/mycovidnz.sqlite");
 
     if (!database.open())
     {
@@ -71,3 +71,4 @@ void userreportissue::on_pushButton_clicked()
 
     close();
 }
+

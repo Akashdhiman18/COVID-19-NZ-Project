@@ -128,7 +128,7 @@
     <string>Password</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="userLogin">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -236,7 +236,7 @@ border-color: rgb(255, 255, 255);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="backbutton_2">
+  <widget class="QPushButton" name="welcomeScreen">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -273,11 +273,11 @@ border-color: rgb(255, 255, 255);</string>
   <zorder>label_2</zorder>
   <zorder>lineEdit_userUsername</zorder>
   <zorder>lineEdit_userUsername_2</zorder>
-  <zorder>pushButton</zorder>
+  <zorder>userLogin</zorder>
   <zorder>label_3</zorder>
   <zorder>label_4</zorder>
   <zorder>admin_login</zorder>
-  <zorder>backbutton_2</zorder>
+  <zorder>welcomeScreen</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -142,7 +142,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="logout">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -324,7 +324,7 @@ background-color: rgb(255, 255, 255);</string>
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="COVID19Test">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -347,7 +347,7 @@ background-color: rgb(255, 255, 255);</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="viewVaccine">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -370,7 +370,7 @@ background-color: rgb(255, 255, 255);</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QPushButton" name="reportissue">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -555,29 +555,6 @@ background-color: rgb(255, 255, 255);</string>
     <string>Report issue</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_6">
-   <property name="geometry">
-    <rect>
-     <x>300</x>
-     <y>500</y>
-     <width>50</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>image/arrow.png</normaloff>image/arrow.png</iconset>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
   <zorder>label_2</zorder>
   <zorder>background_3</zorder>
   <zorder>background_2</zorder>
@@ -590,7 +567,7 @@ background-color: rgb(255, 255, 255);</string>
   <zorder>pick</zorder>
   <zorder>label</zorder>
   <zorder>pushButton</zorder>
-  <zorder>pushButton_2</zorder>
+  <zorder>logout</zorder>
   <zorder>label_5</zorder>
   <zorder>label_6</zorder>
   <zorder>label_7</zorder>
@@ -599,14 +576,13 @@ background-color: rgb(255, 255, 255);</string>
   <zorder>label_3</zorder>
   <zorder>label_4</zorder>
   <zorder>label_9</zorder>
-  <zorder>pushButton_3</zorder>
-  <zorder>pushButton_4</zorder>
-  <zorder>pushButton_5</zorder>
+  <zorder>COVID19Test</zorder>
+  <zorder>viewVaccine</zorder>
+  <zorder>reportissue</zorder>
   <zorder>label_12</zorder>
   <zorder>label_13</zorder>
   <zorder>label_14</zorder>
   <zorder>label_15</zorder>
-  <zorder>pushButton_6</zorder>
  </widget>
  <resources/>
  <connections/>

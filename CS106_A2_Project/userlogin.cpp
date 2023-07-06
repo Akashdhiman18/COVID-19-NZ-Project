@@ -24,8 +24,8 @@ userlogin::userlogin(QWidget *parent) :
 
     QPixmap arrow(":/image/arrowleft.png");
     QIcon icon(arrow);
-    ui->backbutton_2->setIcon(icon);
-    ui->backbutton_2->setIconSize(arrow.rect().size());
+    ui->welcomeScreen->setIcon(icon);
+    ui->welcomeScreen->setIconSize(arrow.rect().size());
 
 }
 
@@ -34,13 +34,27 @@ userlogin::~userlogin()
     delete ui;
 }
 
-void userlogin::on_pushButton_clicked()
+
+void userlogin::on_admin_login_clicked()
+{
+    // Create an instance of the next screen
+    adminlogin* nextScreen = new adminlogin(this);
+
+    // Hide the current screen
+    hide();
+
+    // Show the next screen
+    nextScreen->show();
+}
+
+
+void userlogin::on_userLogin_clicked()
 {
     QString phoneNumber = ui->lineEdit_userUsername->text();
     QString password = ui->lineEdit_userUsername_2->text();
 
     QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("D:/CS106_A2_Project/mycovidnz.sqlite");
+    database.setDatabaseName("C:/CS106_A2_Project/mycovidnz.sqlite");
 
     if (!database.open())
     {
@@ -99,19 +113,7 @@ void userlogin::on_pushButton_clicked()
 }
 
 
-void userlogin::on_admin_login_clicked()
-{
-    // Create an instance of the next screen
-    adminlogin* nextScreen = new adminlogin(this);
-
-    // Hide the current screen
-    hide();
-
-    // Show the next screen
-    nextScreen->show();
-}
-
-void userlogin::on_backbutton_2_clicked()
+void userlogin::on_welcomeScreen_clicked()
 {
     welcomescreenuser *dashboard = new welcomescreenuser();
     dashboard->show();

@@ -29,12 +29,21 @@ adminlogin::~adminlogin()
     delete ui;
 }
 
-void adminlogin::on_pushButton_clicked()
+
+void adminlogin::on_backbutton_2_clicked()
+{
+     welcomescreenuser *dashboard = new welcomescreenuser();
+    dashboard->show();
+    this->close();
+}
+
+
+void adminlogin::on_adminloginbutton_clicked()
 {
     QString username = ui->lineEdit_userUsername->text();
     QString password = ui->lineEdit_userUsername_2->text();
     QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("D:/CS106_A2_Project/mycovidnz.sqlite");
+    database.setDatabaseName("C:/CS106_A2_Project/mycovidnz.sqlite");
 
     if (!database.open())
     {
@@ -70,16 +79,5 @@ void adminlogin::on_pushButton_clicked()
         // Show the admin dashboard screen
         admin->show();
     }
-}
-
-
-
-
-
-void adminlogin::on_backbutton_2_clicked()
-{
-     welcomescreenuser *dashboard = new welcomescreenuser();
-    dashboard->show();
-    this->close();
 }
 

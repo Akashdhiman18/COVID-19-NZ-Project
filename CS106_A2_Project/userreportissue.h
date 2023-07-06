@@ -21,7 +21,8 @@ public:
 
 
 private slots:
-    void on_pushButton_clicked();
+
+    void on_reportissueSubmit_clicked();
 
 private:
     Ui::userreportissue *ui;

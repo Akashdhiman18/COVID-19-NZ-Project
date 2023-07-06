@@ -48,45 +48,52 @@ admindashboard::admindashboard(QWidget *parent) :
     //arrow
     QPixmap arrow(":/image/arrow.png");
     QIcon icon(arrow);
-    ui->pushButton_4->setIcon(icon);
-    ui->pushButton_4->setIconSize(arrow.rect().size());
+    ui->modifyUserinformation->setIcon(icon);
+    ui->modifyUserinformation->setIconSize(arrow.rect().size());
 
     QPixmap arrow1(":/image/arrow.png");
     QIcon icon1(arrow1);
-    ui->pushButton_5->setIcon(icon1);
-    ui->pushButton_5->setIconSize(arrow1.rect().size());
+    ui->UploadCovidReport->setIcon(icon1);
+    ui->UploadCovidReport->setIconSize(arrow1.rect().size());
 
     QPixmap arrow2(":/image/arrow.png");
     QIcon icon2(arrow2);
-    ui->pushButton_7->setIcon(icon2);
-    ui->pushButton_7->setIconSize(arrow2.rect().size());
+    ui->viewUserinformation->setIcon(icon2);
+    ui->viewUserinformation->setIconSize(arrow2.rect().size());
 
 }
 admindashboard::~admindashboard()
 {
     delete ui;
 }
-void admindashboard::on_pushButton_4_clicked()
+
+
+void admindashboard::on_viewUserinformation_clicked()
 {
     adminuserinformation* nextScreen = new adminuserinformation(this);
     hide();
     nextScreen->show();
 }
-void admindashboard::on_pushButton_5_clicked()
+
+
+void admindashboard::on_modifyUserinformation_clicked()
 {
     adminmodifyuserinformation* nextScreens = new adminmodifyuserinformation(this);
     hide();
     nextScreens->show();
 }
-void admindashboard::on_pushButton_7_clicked()
+
+
+void admindashboard::on_UploadCovidReport_clicked()
 {
+
     admincovidtestreport* nextScreenes = new admincovidtestreport(this);
     hide();
     nextScreenes->show();
 }
 
 
-void admindashboard::on_pushButton_2_clicked()
+void admindashboard::on_logoutButton_clicked()
 {
     welcomescreenuser *screen = new welcomescreenuser();
     screen->show();

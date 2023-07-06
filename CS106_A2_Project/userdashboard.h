@@ -19,14 +19,13 @@ private slots:
     void on_label_9_windowIconTextChanged(const QString &iconText);
 
 
+    void on_COVID19Test_clicked();
 
-    void on_pushButton_3_clicked();
+    void on_viewVaccine_clicked();
 
-    void on_pushButton_5_clicked();
+    void on_reportissue_clicked();
 
-    void on_pushButton_4_clicked();
-
-    void on_pushButton_2_clicked();
+    void on_logout_clicked();
 
 private:
     Ui::userdashboard *ui;

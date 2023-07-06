@@ -62,14 +62,6 @@ set(PROJECT_SOURCES
         uservaccinationrecord.cpp
         uservaccinationrecord.h
         uservaccinationrecord.ui
-
-
-
-
-
-
-
-
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

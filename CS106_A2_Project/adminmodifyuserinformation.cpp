@@ -42,7 +42,7 @@ void adminmodifyuserinformation::on_searchbutton_clicked()
     QString userID = ui->textuserid->text();
 
     QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("D:/CS106_A2_Project/mycovidnz.sqlite");
+    database.setDatabaseName("C:/CS106_A2_Project/mycovidnz.sqlite");
 
     if (!database.open())
     {
@@ -85,7 +85,7 @@ void adminmodifyuserinformation::on_save_clicked()
     }
 
     QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("D:/CS106_A2_Project/mycovidnz.sqlite");
+    database.setDatabaseName("C:/CS106_A2_Project/mycovidnz.sqlite");
 
     if (!database.open())
     {
@@ -139,7 +139,7 @@ void adminmodifyuserinformation::on_save_clicked()
 }
 void adminmodifyuserinformation::on_GenQRcode_clicked()
 {
-    QPixmap qr("D:/CS106_A2_Project/image/nzcp.png");
+    QPixmap qr(":/image/nzcp.png");
     ui->qrCodeLabel->setPixmap(qr);
 }
 void adminmodifyuserinformation::on_backbutton_clicked()

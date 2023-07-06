@@ -17,13 +17,13 @@ public:
 
 private slots:
 
-    void on_pushButton_clicked();
-
-
 
     void on_admin_login_clicked();
 
-    void on_backbutton_2_clicked();
+
+    void on_userLogin_clicked();
+
+    void on_welcomeScreen_clicked();
 
 private:
     Ui::userlogin *ui;

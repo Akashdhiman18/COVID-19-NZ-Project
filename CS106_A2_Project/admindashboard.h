@@ -21,13 +21,14 @@ private slots:
 
     void on_covidreport_clicked();
 
-    void on_pushButton_4_clicked();
 
-    void on_pushButton_5_clicked();
+    void on_viewUserinformation_clicked();
 
-    void on_pushButton_7_clicked();
+    void on_modifyUserinformation_clicked();
 
-    void on_pushButton_2_clicked();
+    void on_UploadCovidReport_clicked();
+
+    void on_logoutButton_clicked();
 
 private:
     Ui::admindashboard *ui;

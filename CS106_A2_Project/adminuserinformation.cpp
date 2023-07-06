@@ -19,7 +19,7 @@ adminuserinformation::adminuserinformation(QWidget* parent) :
     ui->backbutton_2->setIconSize(arrow.rect().size());
 
     QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("D:/CS106_A2_Project/mycovidnz.sqlite");
+    database.setDatabaseName("C:/CS106_A2_Project/mycovidnz.sqlite");
     if (!database.open())
     {
         qDebug() << "Error: Unable to open database";

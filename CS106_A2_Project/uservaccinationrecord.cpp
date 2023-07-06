@@ -26,7 +26,7 @@ uservaccinationrecord::uservaccinationrecord(int userId,QWidget *parent) :
 
 
     QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("D:/CS106_A2_Project/mycovidnz.sqlite");
+    database.setDatabaseName("C:/CS106_A2_Project/mycovidnz.sqlite");
 
     if (!database.open())
     {
@@ -76,7 +76,17 @@ uservaccinationrecord::~uservaccinationrecord()
     delete ui;
 }
 
-void uservaccinationrecord::on_pushButton_clicked()
+
+void uservaccinationrecord::on_backbutton_clicked()
+{
+    userdashboard *user=new userdashboard(m_userId,parentWidget());
+    user->show();
+    this->close();
+
+}
+
+
+void uservaccinationrecord::on_Downloadvaccinecertificate_clicked()
 {
     QString fileName = QFileDialog::getSaveFileName(this, "Save Certificate", QString(), "PDF Files (*.pdf)");
 
@@ -122,14 +132,5 @@ void uservaccinationrecord::on_pushButton_clicked()
 
         QMessageBox::information(this, "Download Successful", "Certificate downloaded successfully.");
     }
-}
-
-
-void uservaccinationrecord::on_backbutton_clicked()
-{
-    userdashboard *user=new userdashboard(m_userId,parentWidget());
-    user->show();
-    this->close();
-
 }
 

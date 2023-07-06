@@ -18,7 +18,9 @@ public:
 private slots:
     void on_signinbutton_clicked();
 
+
     void on_backbutton_clicked();
+    void on_submitCovidreport_clicked();
 
 private:
     Ui::admincovidtestreport *ui;

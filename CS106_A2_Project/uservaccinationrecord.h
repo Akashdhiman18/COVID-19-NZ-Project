@@ -18,9 +18,11 @@ public:
     ~uservaccinationrecord();
 
 private slots:
-    void on_pushButton_clicked();
+
 
     void on_backbutton_clicked();
+
+    void on_Downloadvaccinecertificate_clicked();
 
 private:
     Ui::uservaccinationrecord *ui;

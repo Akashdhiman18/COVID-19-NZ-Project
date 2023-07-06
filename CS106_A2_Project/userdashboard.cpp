@@ -39,18 +39,18 @@ userdashboard::userdashboard(int userId, QWidget *parent) :
     //arrow
     QPixmap arrow(":/image/arrow.png");
     QIcon icon(arrow);
-    ui->pushButton_3->setIcon(icon);
-    ui->pushButton_3->setIconSize(arrow.rect().size());
+    ui->COVID19Test->setIcon(icon);
+    ui->COVID19Test->setIconSize(arrow.rect().size());
 
     QPixmap arrow1(":/image/arrow.png");
     QIcon icon1(arrow1);
-    ui->pushButton_4->setIcon(icon1);
-    ui->pushButton_4->setIconSize(arrow1.rect().size());
+    ui->reportissue->setIcon(icon1);
+    ui->reportissue->setIconSize(arrow1.rect().size());
 
     QPixmap arrow2(":/image/arrow.png");
     QIcon icon2(arrow2);
-    ui->pushButton_5->setIcon(icon2);
-    ui->pushButton_5->setIconSize(arrow2.rect().size());
+    ui->viewVaccine->setIcon(icon2);
+    ui->viewVaccine->setIconSize(arrow2.rect().size());
 
     QPixmap img(":/image/file.png");
     ui->label_12->setPixmap(img);
@@ -63,7 +63,7 @@ userdashboard::userdashboard(int userId, QWidget *parent) :
 
     // Retrieve user information from the database
     QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("D:/CS106_A2_Project/mycovidnz.sqlite");
+    database.setDatabaseName("C:/CS106_A2_Project/mycovidnz.sqlite");
 
     if (!database.open())
     {
@@ -119,7 +119,8 @@ userdashboard::~userdashboard()
 }
 
 
-void userdashboard::on_pushButton_3_clicked()
+
+void userdashboard::on_COVID19Test_clicked()
 {
     usercovidlist* nextScreen = new usercovidlist(m_userId, this);
     hide();
@@ -127,15 +128,7 @@ void userdashboard::on_pushButton_3_clicked()
 }
 
 
-void userdashboard::on_pushButton_5_clicked()
-{
-
-    userreportissue* nextScreen = new userreportissue(m_userId,this);
-    nextScreen->show();
-}
-
-
-void userdashboard::on_pushButton_4_clicked()
+void userdashboard::on_viewVaccine_clicked()
 {
     uservaccinationrecord* nextScreen = new uservaccinationrecord(m_userId,this);
     hide();
@@ -143,7 +136,14 @@ void userdashboard::on_pushButton_4_clicked()
 }
 
 
-void userdashboard::on_pushButton_2_clicked()
+void userdashboard::on_reportissue_clicked()
+{
+    userreportissue* nextScreen = new userreportissue(m_userId,this);
+    nextScreen->show();
+}
+
+
+void userdashboard::on_logout_clicked()
 {
     welcomescreenuser *screen = new welcomescreenuser();
     screen->show();

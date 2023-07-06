@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     welcomeScreen.show();
 
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("D:/CS106_A2_Project/mycovidnz.sqlite");
+    db.setDatabaseName("C:/CS106_A2_Project/mycovidnz.sqlite");
 
     if (!db.open()) {
         qDebug() << "Error: Unable to open database";
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
     qDebug() << "ReportIssue table created successfully";
 
     // Create the VaccinationRecords table
-    QString createTableQuery = "CREATE TABLE VaccinationRecords ("
+    QString createTableQuery = "CREATE TABLE IF NOT EXISTS VaccinationRecords ("
                                "vcid INTEGER PRIMARY KEY AUTOINCREMENT,"
                                "userid INTEGER,"
                                "vaccinationStatus TEXT,"
