@@ -8,5 +8,5 @@ This is a Yoobee College CS106 Software Engineering conceptual project that is b
 #SQLite Manager (For Database)  
 https://sqlabs.com/download/SQLiteManager64bitSetup.exe
 
-Import Project in D drive beacuse of SQLITE Path ("C:/CS106_A2_Project/mycovidnz.sqlite")
+Import Project in C drive beacuse of SQLITE Path ("C:/CS106_A2_Project/mycovidnz.sqlite")
 
